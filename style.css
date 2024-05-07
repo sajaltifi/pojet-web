@@ -1,0 +1,105 @@
+header{
+    text-align: center;
+    border-bottom: 2px solid  rgb(65, 63, 63); 
+}
+.tete{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 40px ;
+}
+.tete a{
+  color: dimgray;
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+.bordure{
+    border-bottom: 2px solid  rgb(65, 63, 63);
+    margin-bottom: 20px;
+}
+.text{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    color:#000000;
+    text-decoration:none;
+    font-family:'Grenze';
+
+}
+.phrase{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    color:#000000;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.parag{
+    font-family: 'Grenze';
+    text-align: center;
+    font-size: 45px ;
+    color: #F50732;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.aa{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  }
+  
+  .pos {
+    width: 380px; 
+    height: 380px; 
+    margin: 20px; 
+    
+  }
+  
+  .pos img {
+    width: 100%; 
+    height: 100%;
+    
+  }
+ .video-container{
+    translate: 450px;
+ }
+ .pos {
+    width: 380px; 
+    height: 380px; 
+    margin: 20px; 
+    position: relative;
+    overflow: hidden; 
+  }
+  
+  .pos img {
+    width: 100%; 
+    height: 100%;
+    transition: transform 0.3s; 
+  }
+  
+  .pos:hover img {
+    transform: scale(1.05); /* Agrandir légèrement l'image au survol */
+  }
+  
+  .pos::after {
+    content: "Découvrir le produit" ; /* Texte à afficher au centre */
+    position:absolute; /* Position absolue pour placer le texte au centre */
+    top: 50%; /* Décalage de moitié vers le bas */
+    left: 50%; /* Décalage de moitié vers la droite */
+    transform: translate(-50%, -50%); /* Déplacer le texte de moitié vers le haut et la gauche pour le centrer */
+    opacity: 0; /* Rendre le texte initialement invisible */
+    transition: opacity 0.3s; /* Ajouter une transition pour l'effet d'apparition */
+  }
+  
+  .pos:hover::after {
+    opacity: 1; /* Afficher le texte au survol */
+    z-index: 1; /* S'assurer que le texte apparaît au-dessus de l'image agrandie */
+    color: white; 
+    font-size: 20px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px 50px; /* Ajouter un peu de rembourrage pour le texte */
+    border-radius: 5px;
+  }
